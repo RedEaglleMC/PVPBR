@@ -1,0 +1,30 @@
+/* zoom.css - estilos do modal zoom */
+
+.zoom-modal {
+    display: none; /* oculto inicialmente */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.zoom-modal.active {
+    display: flex;
+}
+
+.zoom-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.3);
+    user-select: none;
+    cursor: zoom-out;
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PVPBR - Projeto Minecraft</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="zoom.css" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title">
+                <h1>Projeto PVPBR</h1>
+                <p>Mapa de treinamento de PvP para Minecraft Java e Bedrock</p>
+            </div>
+            <div class="logo">
+                <img src="LOGOS/redeaglle_logo.png" alt="Logotipo RedEaglle" />
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="text">
+            <h2>🔥 Sobre o Projeto</h2>
+            <p>
+                O <strong>PVPBR</strong> é um mapa criado com o objetivo de ensinar jogadores iniciantes e avançados a melhorarem no PvP (Player vs Player) dentro do Minecraft, tanto na versão <strong>Java</strong> quanto <strong>Bedrock</strong>.
+                Este projeto ambicioso busca trazer uma experiência de altíssima qualidade — comparável a jogos da <strong>Rockstar Games</strong>.
+            </p>
+            <p>
+                Atualmente estamos na versão <strong>1.0 Beta</strong> e buscamos o seu apoio para tornar esse sonho realidade.
+            </p>
+        </div>
+        <div class="image">
+            <img src="IMAGENS/pvpbr_preview.jpg" alt="Imagem do mapa PVPBR" />
+        </div>
+    </section>
+
+    <section class="support">
+        <h2>🚀 Apoie esse projeto</h2>
+        <p>
+            Estamos desenvolvendo esse mapa com dedicação e criatividade, mas precisamos da sua colaboração.
+        </p>
+        <ul>
+            <li>💙 Doe para ajudar na manutenção e expansão</li>
+            <li>🤝 Colabore com ideias, feedbacks ou divulgação</li>
+            <li>📢 Compartilhe com seus amigos e comunidades de Minecraft</li>
+        </ul>
+        <a href="apoie.html" class="donate-button">Quero Apoiar</a>
+    </section>
+
+    <section class="gallery">
+        <h2>Imagens do Projeto</h2>
+        <div class="carousel-wrapper">
+            <button class="arrow left" aria-label="Seta para esquerda">&#9664;</button>
+            
+            <div class="carousel-container">
+                <img src="IMAGENS/pvpbr_preview1.jpg" alt="Preview do mapa 1">
+                <img src="IMAGENS/pvpbr_preview2.jpg" alt="Preview do mapa 2">
+                <img src="IMAGENS/pvpbr_preview3.jpg" alt="Preview do mapa 3">
+                <img src="IMAGENS/pvpbr_preview4.jpg" alt="Preview do mapa 4">
+                <img src="IMAGENS/pvpbr_preview5.jpg" alt="Preview do mapa 5">
+                <img src="IMAGENS/pvpbr_preview6.jpg" alt="Preview do mapa 6">
+            </div>
+
+            <button class="arrow right" aria-label="Seta para direita">&#9654;</button>
+        </div>
+    </section>
+
+    <section class="notice">
+        <p><strong>Aviso importante:</strong><br>
+        Como o mapa está em versão beta, é bastante provável que ainda existam alguns bugs. Um dos problemas que identificamos é que, na maioria das vezes — especialmente na versão Minecraft Java — certos botões podem não funcionar corretamente. Já na versão Aircrash Birdrock, esse problema é bem mais raro. De qualquer forma, isso não comprometerá a experiência de jogo. Caso você encontre algum bug ou erro grave, por favor, reporte no nosso grupo do Discord. Agradecemos muito a sua colaboração!</p>
+    </section>
+
+    <section class="download">
+        <h2>📥 Área de Download</h2>
+        <p>Escolha sua versão do Minecraft para baixar o mapa:</p>
+
+        <div class="version-buttons">
+            <button onclick="mostrarLink('java')">Minecraft Java</button>
+            <button onclick="mostrarLink('bedrock')">Minecraft Bedrock</button>
+        </div>
+
+        <div class="download-links">
+            <div id="java-link" class="link" style="display: none;">
+                <a href="https://fir3.net/PVPBRMapaBeta" target="_blank">Clique aqui para baixar o mapa para Minecraft Java</a>
+            </div>
+            <div id="bedrock-link" class="link" style="display: none;">
+                <a href="https://fir3.net/PVPBRMapaBetaBedrock" target="_blank">Clique aqui para baixar o mapa para Minecraft Bedrock</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PVPBR. Projeto por RedEaglle. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="galeria.js"></script>
+    <script src="zoom.js"></script>
+    <script src="download.js"></script>
+</body>
+</html>

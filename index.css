@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8ff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com logo à direita */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header-content .title {
+    flex: 1;
+    text-align: left;
+}
+
+.header-content .title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content .title p {
+    font-size: 1.2rem;
+}
+
+.header-content .logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Introdução */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+}
+
+.intro .text {
+    max-width: 600px;
+    margin: 1rem;
+}
+
+.intro .image {
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.intro .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Apoio e doação */
+.support {
+    background-color: #e6f2ff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.support h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.support ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.support li {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.support a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+.support code {
+    background-color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-family: monospace;
+}
+
+/* Botão padrão */
+.donate-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.9rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #0056b3;
+}
+
+/* Galeria */
+.gallery {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery .images img {
+    width: 480px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-content .title {
+        text-align: center;
+    }
+
+    .header-content .logo img {
+        margin-top: 1rem;
+    }
+
+    .gallery .images img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
